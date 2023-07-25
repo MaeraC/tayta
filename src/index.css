@@ -1,13 +1,510 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+h1 {
+  font-family: 'Noto Serif Display', serif;
+  letter-spacing: 10px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 80px;
+}
+h2 , h3 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fdcf7a;
+  text-transform: uppercase;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  color: white;
+}
+button:hover {
+  background-color: #464646;
+  transition: 0.3s;
+  cursor: pointer;
+}
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+p {
+  font-size: 13px;
+
+}
+section h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+section h2 , section h3 {
+  color: #99680d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+header {
+  height: 100vh;
+  background: url(./assets/1.jpg) fixed;
+  background-size: cover;
+}
+header div {
+  background-color: #00000080;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  padding-top: 18%;
+}
+header button {
+  margin-top: 30px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.192);
+  z-index: 99;
+}
+nav img {
+  width: 30px;
+  height: 30px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a {
+  text-decoration: none;
+}
+nav .logo span {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+nav .anchors a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+nav .anchors a:hover {
+  color: #99680d;
+  transition: 0.5s;
+}
+nav .anchors {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+
+
+
+
+
+
+.tayta {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 10%;
+  position: relative;
+}
+.tayta .text {
+  width: 50%;
+}
+.tayta .img , .about .img {
+  width: 40%;
+  height: 550px;
+  position: relative;
+  z-index: 2;
+}
+.tayta img {
+  position: absolute;
+  top: 10px;
+  left: 10px;  
+  width: 100%;
+  z-index: 2;
+}
+.tayta .img div {
+  background-color: #99680d;
+  width: 100%;
+  height: 100%;
+}
+.tayta aside {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.699);
+  width: 70%;
+  z-index: 99;
+  padding: 40px;
+  background-color: white;
+}
+.tayta aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tayta aside p:nth-child(1) {
+  font-size: 40px;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.band-images {
+  display: flex;
+  margin-top: 150px;
+}
+.band-images img {
+  width: 30%;
+  height: 250px;
+}
+
+
+
+
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10%;
+}
+.about h1 {
+  line-height: 60px;
+}
+.about .img  {
+  display: flex;
+  width: 45%;
+  height: 500px;
+}
+.about .text {
+  width: 50%;
+}
+.about img {
+  width: 75%;
+}
+.about img:nth-child(2) {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-left: solid 10px #99680d;
+  border-top: solid 10px #99680d;
+}
+
+
+
+
+
+
+.list-num {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 5%;
+  background-color: #80808018;
+}
+.list-num img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+.list-num div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.list-num div p:nth-child(2) {
+  font-size: 40px;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.list-num div p:nth-child(3) {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.list-num div p:nth-child(4) {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+
+
+
+
+.values {
+  display: flex;
+}
+.values img {
+  width: 40%;
+  height: 600px;
+}
+.values div {
+  width: 60%;
+  padding: 80px;
+}
+.values h1 {
+  margin-bottom: 40px;
+}
+.values h3 {
+  font-family: "Noto Serif Display";
+}
+.values .i {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+  border-top: 1px solid rgba(128, 128, 128, 0.384);
+}
+.values .item {
+  font-family: "Noto Serif Display";
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+}
+
+
+
+
+
+.team {
+  padding: 60px;
+}
+.team h1 , .team h2 {
+  text-align: center;
+}
+.team .items {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.team .items .item {
+  width: 23%;
+  height: 350px;
+  position: relative;
+  margin: 20px;
+}
+.team .items .item div {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: white;
+  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.699);
+  padding: 20px;
+  text-align: center;
+}
+.team .description p:nth-child(2) {
+  color: #99680d;
+}
+.team .description p:nth-child(1) {
+  font-weight: bold;
+  font-family: "Noto Serif Display";
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+form {
+  display: flex;
+  justify-content: center;
+  background: url(./assets/11.jpg);
+  background-size: cover;
+  position: relative;
+  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+form .formulaire {
+  width: 45%;
+  background-color: white;
+  padding: 40px;
+  position: absolute;
+  top: 100px;
+  box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.699);
+}
+.formulaire div {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire input {
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  border: none;
+  outline: none;
+  padding-bottom: 10px;
+  border-bottom: solid rgba(128, 128, 128, 0.521) 1px;
+}
+.formulaire button {
+  background-color: #99680d;
+  margin-top: 10px;
+}
+.formulaire button:hover {
+  background-color: #464646;
+  transition: 0.3s;
+}
+form h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.testimonials h1 {
+  margin-bottom: 40px;
+}
+.testimonials .text {
+  width: 60%;
+  text-align: center;
+}
+.testimonials .description {
+  font-size: 12px;
+}
+.testimonials img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testimonials .client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  text-align: left;
+}
+.client p:nth-child(1) {
+  font-weight: bold;
+  font-family: "Noto Serif Display";
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.client p:nth-child(2) {
+  color: #99680d;
+}
+
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer ul {
+  list-style-type: none;
+}
+footer h2 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+footer li {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+footer .social {
+  display: flex;
+  margin-bottom: 30px;
+}
+.social li {
+  margin-right: 10px;
+}
+footer .anchors {
+  display: flex;
+  flex-direction: column;
+}
+footer .anchors a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+footer .anchors a:hover {
+  color: #99680d;
+  transition: 0.5s;
+}
+footer .details li {
+  display: flex;
+  align-items: center;
+}
+footer img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }

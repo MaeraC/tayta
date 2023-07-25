@@ -6,12 +6,13 @@ import fb from "../assets/fb.png"
 import ig from "../assets/ig.png"
 import tw from "../assets/tw.png"
 import yb from "../assets/yb.png"
+import logo from "../assets/logo.png"
 
 function Footer() {
     return (
         <footer>
             <div>
-                <h2>logo</h2>
+            <h2>CONTACT</h2>
                 <ul className="details">
                     <li><img src={phone} alt="" /> (+01)979.828.17</li>
                     <li><img src={mail} alt="" /> contact.tayta@gmail.com</li>
@@ -31,7 +32,7 @@ function Footer() {
                 </div>
             </div>
             <div>
-                <h2>Contact</h2>
+                <h2>Reséaux sociaux</h2>
                 <ul className="social">
                     <li><img src={fb} alt="" /></li>
                     <li><img src={ig} alt="" /></li>

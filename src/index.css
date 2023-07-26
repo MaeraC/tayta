@@ -803,7 +803,13 @@ form h1 {
     width: 80%;
   }
 }
-
+@media screen and (max-width: 550px) {
+  .testimonials h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 50px;
+  }
+}
 
 
 

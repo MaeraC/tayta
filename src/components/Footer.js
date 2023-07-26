@@ -6,7 +6,6 @@ import fb from "../assets/fb.png"
 import ig from "../assets/ig.png"
 import tw from "../assets/tw.png"
 import yb from "../assets/yb.png"
-import logo from "../assets/logo.png"
 
 function Footer() {
     return (

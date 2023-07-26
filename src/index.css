@@ -111,6 +111,10 @@ header a {
   }
 }
 @media screen and (max-width: 600px) {
+  header {
+    background: url(./assets/1.jpg);
+    background-size: cover;
+  }
   header div {
     padding: 60px 20px;
     padding-top: 180px;

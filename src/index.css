@@ -729,11 +729,23 @@ form h1 {
     width: 80%;
     top: 70px;
   }
+  form input {
+    width: 100%;
+  }
+  form h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   form .formulaire {
     width: 90%;
     top: 40px;
+  }
+  form h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 50px;
   }
 }
 
